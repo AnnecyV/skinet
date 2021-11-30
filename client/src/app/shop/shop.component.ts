@@ -15,7 +15,6 @@ export class ShopComponent implements OnInit {
   products: IProduct[] = [];
   brands: IBrand [] |any = [];
   types: IType [] |any = [];
- // number: number = 3; debugging
   shopParams = new ShopParams();
   totalCount: number | any;
   sortOptions = [
