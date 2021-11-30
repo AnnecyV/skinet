@@ -5,6 +5,7 @@ import { ProductItemComponent } from './product-item/product-item.component';
 import { SharedModule } from '../shared/shared.module';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { ShopRoutingModule } from './shop-routing.module';
+import { BreadcrumbModule } from 'xng-breadcrumb';
 
 
 
@@ -17,7 +18,8 @@ import { ShopRoutingModule } from './shop-routing.module';
   imports: [
     CommonModule,
     SharedModule,
-    ShopRoutingModule
+    ShopRoutingModule,
+    BreadcrumbModule
   ],
   exports: [ShopComponent]
 })
