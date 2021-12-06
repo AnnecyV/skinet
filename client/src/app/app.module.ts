@@ -11,6 +11,7 @@ import { ErrorInterceptor } from './core/interceptors/error.interceptor';
 import { NgxSpinnerModule } from 'ngx-spinner/';
 import { LoadingInterceptor } from './core/interceptors/loading.interceptors';
 
+
 @NgModule({
   declarations: [
     AppComponent

@@ -2,7 +2,7 @@
   <div class="row">
 
     <section class="col-3">
-      <ng-container *ngIf="brands.length != 0 && types.lenght != 0">
+      <ng-container *ngIf="brands && types">
       <h5 class="text-warning ml-3 mt-4 mb-3">Sort</h5>
       <select class="custom-select mb-3 mt-4" (change)="onSortSelected($event.target.value)">
         <option *ngFor="let sort of sortOptions"
@@ -14,7 +14,7 @@
 
       <h5 class="text-warning ml-3">Brands</h5>
       <ul class="list-group my-3">
-        <li class="list-group-item" 
+        <li class="list-group-item" style="cursor: pointer;" 
           *ngFor="let brand of brands"
           [class.active]="brand.id === this.shopParams.brandId"
           [value]="brand.id"
