@@ -6,6 +6,7 @@ import { SharedModule } from '../shared/shared.module';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { ShopRoutingModule } from './shop-routing.module';
 import { BreadcrumbModule } from 'xng-breadcrumb';
+import { OrderRoutingModule } from '../order/order-routing.module';
 
 
 
