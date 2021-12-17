@@ -50,15 +50,15 @@
         <ul class="list-unstyled mb-1">
             <li class="d-flex justify-content-between py-3 border-bottom">
                 <strong class="text-muted">Order subtotal</strong>
-                <strong>{{order.subtotal | currency}}</strong>
+                <strong>{{order?.subtotal | currency}}</strong>
             </li>
             <li class="d-flex justify-content-between py-3 border-bottom">
                 <strong class="text-muted">Shipping and handling</strong>
-                <strong>{{order.shippingPrice | currency}}</strong>
+                <strong>{{order?.shippingPrice | currency}}</strong>
             </li>
             <li class="d-flex justify-content-between py-3 border-bottom">
                 <strong class="text-muted">Total</strong>
-                <strong>{{order.total | currency}}</strong>
+                <strong>{{order?.total | currency}}</strong>
             </li>
         </ul>
     </div>

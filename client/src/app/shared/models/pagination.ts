@@ -7,3 +7,9 @@ import { IProduct } from "./product";
         data: IProduct[];
     }
 
+export class Pagination implements IPagination{
+    pageIndex: number | any;
+    pageSize: number | any;
+    count: number | any;
+    data: IProduct[] |any = [];
+}
